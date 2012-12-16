@@ -1,0 +1,6 @@
+C:\Personal Projects\ComputerScience\ComputerScience\bin\Debug\ComputerScience.exe.config
+C:\Personal Projects\ComputerScience\ComputerScience\obj\Debug\ComputerScience.csprojResolveAssemblyReference.cache
+C:\Personal Projects\ComputerScience\ComputerScience\bin\Debug\ComputerScience.exe
+C:\Personal Projects\ComputerScience\ComputerScience\bin\Debug\ComputerScience.pdb
+C:\Personal Projects\ComputerScience\ComputerScience\obj\Debug\ComputerScience.exe
+C:\Personal Projects\ComputerScience\ComputerScience\obj\Debug\ComputerScience.pdb
