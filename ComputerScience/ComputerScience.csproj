@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\BubbleSort.cs" />
-    <Compile Include="Algorithms\InsertionSort.cs" />
-    <Compile Include="Algorithms\MergeSort.cs" />
-    <Compile Include="Algorithms\QuickSort.cs" />
-    <Compile Include="Algorithms\SelectionSort.cs" />
-    <Compile Include="Algorithms\ShellSort.cs" />
+    <Compile Include="Algorithms\Sorts\BubbleSort.cs" />
+    <Compile Include="Algorithms\Sorts\HeapSort.cs" />
+    <Compile Include="Algorithms\Sorts\InsertionSort.cs" />
+    <Compile Include="Algorithms\Sorts\MergeSort.cs" />
+    <Compile Include="Algorithms\Sorts\QuickSort.cs" />
+    <Compile Include="Algorithms\Sorts\SelectionSort.cs" />
+    <Compile Include="Algorithms\Sorts\ShellSort.cs" />
     <Compile Include="Data Structures\B-Tree.cs" />
     <Compile Include="Data Structures\BinarySearchTree.cs" />
     <Compile Include="Data Structures\HashTable.cs" />

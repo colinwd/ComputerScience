@@ -5,6 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ComputerScience.Algorithms {
+
+    /*
+     * O(n log n)
+     * 
+     * Can use a good chunk of memory as overhead, as we store a lot of
+     * intermediate values on the stack.
+     */
     public class MergeSort {
         public static List<int> Sort(List<int> list)
         {
@@ -13,15 +20,16 @@ namespace ComputerScience.Algorithms {
                 return list;
             }
 
+            //Split list in half
             var left = new List<int>();
             var right = new List<int>();
-            var middle = list.Count()/2;
+            var middle = list.Count() / 2 + 1;
             foreach (var i in list)
             {
-                if (i < middle)
+                if (list.IndexOf(i) < middle)
                 {
                     left.Add(i);
-                } else if (i >= middle)
+                } else if (list.IndexOf(i) >= middle)
                 {
                     right.Add(i);
                 }
