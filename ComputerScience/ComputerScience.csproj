@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\BubbleSort.cs" />
     <Compile Include="Algorithms\InsertionSort.cs" />
+    <Compile Include="Algorithms\MergeSort.cs" />
+    <Compile Include="Algorithms\QuickSort.cs" />
+    <Compile Include="Algorithms\SelectionSort.cs" />
+    <Compile Include="Algorithms\ShellSort.cs" />
     <Compile Include="Data Structures\B-Tree.cs" />
+    <Compile Include="Data Structures\BinarySearchTree.cs" />
+    <Compile Include="Data Structures\HashTable.cs" />
     <Compile Include="Data Structures\Trie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
