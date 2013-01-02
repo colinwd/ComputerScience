@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ComputerScience.Algorithms;
+using ComputerScience.Algorithms.Sorts;
 
 
 namespace Tests {
@@ -30,8 +30,7 @@ namespace Tests {
             var list1s = new List<int> {1, 2, 3, 7, 8};
             var list2s = new List<int> {1, 1, 1, 2, 4};
 
-            //CollectionAssert.AreEqual(MergeSort.Sort(list1), list1s);
-            //StackOverflow - why?
+            CollectionAssert.AreEqual(MergeSort.Sort(list1), list1s);
             CollectionAssert.AreEqual(MergeSort.Sort(list2), list2s);
         }
     }

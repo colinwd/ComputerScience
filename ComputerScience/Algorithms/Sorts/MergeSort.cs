@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerScience.Algorithms {
+namespace ComputerScience.Algorithms.Sorts {
 
     /*
      * O(n log n)
@@ -23,16 +23,14 @@ namespace ComputerScience.Algorithms {
             //Split list in half
             var left = new List<int>();
             var right = new List<int>();
-            var middle = list.Count() / 2 + 1;
-            foreach (var i in list)
+            var middle = list.Count() / 2;
+            for (int i = 0; i < middle; i++)
             {
-                if (list.IndexOf(i) < middle)
-                {
-                    left.Add(i);
-                } else if (list.IndexOf(i) >= middle)
-                {
-                    right.Add(i);
-                }
+                left.Add(list[i]);
+            }
+            for (int i = 0; i < list.Count() - middle; i++)
+            {
+                right.Add(list[i+middle]);
             }
 
             left = Sort(left);
