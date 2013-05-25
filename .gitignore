@@ -48,6 +48,7 @@ Generated_Code
 *.log
 *.sql
 *.sqlite
+*.mdf
  
 # Resharper
 _ReSharper.*
