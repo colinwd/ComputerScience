@@ -1,7 +1,0 @@
-C:\Personal Projects\ComputerScience\Tests\bin\Debug\Tests.dll
-C:\Personal Projects\ComputerScience\Tests\bin\Debug\Tests.pdb
-C:\Personal Projects\ComputerScience\Tests\bin\Debug\ComputerScience.exe
-C:\Personal Projects\ComputerScience\Tests\bin\Debug\ComputerScience.pdb
-C:\Personal Projects\ComputerScience\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
-C:\Personal Projects\ComputerScience\Tests\obj\Debug\Tests.dll
-C:\Personal Projects\ComputerScience\Tests\obj\Debug\Tests.pdb

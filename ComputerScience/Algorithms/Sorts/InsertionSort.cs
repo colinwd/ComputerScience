@@ -6,19 +6,39 @@ using System.Threading.Tasks;
 
 namespace ComputerScience.Algorithms.Sorts {
     public class InsertionSort {
-        public static List<int> Sort(List<int> list) {
-            if (list.Count <= 1)
+        /// <summary>
+        /// Implementation of Insertion Sort for integer arrays.
+        /// O(n^2)
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public static int[] Sort(int[] list) {
+            if (list.Length <= 1)
             {
                 return list;
             }
-            var ret = new List<int>();
-            for (var i = 1; i < list.Count; i++) {
-                for (var j = i; i > 1 && list[j] < list[j - 1]; j--) {
-                    var tmp = list[j];
-                    list[j] = list[j - 1];
-                    list[j - 1] = tmp;
+
+            //new list so no side-effects!
+            int[] ret = new int[list.Length];
+            Array.Copy(list, ret, list.Length);
+
+            //loop over entire list
+            for (var i = 1; i < ret.Length; i++)
+            {
+                //move backwards from current to beginning of the list
+                for (var j = i; j > 0; j--)
+                {
+                    //if our current number is smaller than a previous number
+                    if (ret[j] < ret[j - 1])
+                    {
+                        //move it towards the beginning of the list
+                        int tmp = ret[j - 1];
+                        ret[j - 1] = ret[j];
+                        ret[j] = tmp;
+                    }
                 }
             }
+
             return ret;
         }
     }

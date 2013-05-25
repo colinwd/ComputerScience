@@ -8,23 +8,24 @@ namespace Tests {
     public class InsertionSortTests {
         [TestMethod]
         public void ZeroLengthListReturnsSameList() {
-            var list = new List<int>();
+            var list = new int[0];
             Assert.AreEqual(list, InsertionSort.Sort(list));
         }
 
         [TestMethod]
         public void OneLengthListReturnsSameList() {
-            var list = new List<int> { 1 };
+            var list = new int[1];
+            list[0] = 1;
             Assert.AreEqual(list, InsertionSort.Sort(list));
         }
 
         [TestMethod]
         public void ProperlySortsLists() {
-            var list1 = new List<int> { 2, 7, 8, 3, 1 };
-            var list2 = new List<int> { 4, 2, 1, 1, 1 };
+            int[] list1 = new List<int> { 2, 7, 8, 3, 1 }.ToArray();
+            int[] list2 = new List<int> { 4, 2, 1, 1, 1 }.ToArray();
 
-            var list1s = new List<int> { 1, 2, 3, 7, 8 };
-            var list2s = new List<int> { 1, 1, 1, 2, 4 };
+            int[] list1s = new List<int> { 1, 2, 3, 7, 8 }.ToArray();
+            int[] list2s = new List<int> { 1, 1, 1, 2, 4 }.ToArray();
 
             CollectionAssert.AreEqual(InsertionSort.Sort(list1), list1s);
             CollectionAssert.AreEqual(InsertionSort.Sort(list2), list2s);
