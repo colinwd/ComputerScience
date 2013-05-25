@@ -52,3 +52,6 @@ Generated_Code
  
 # Resharper
 _ReSharper.*
+
+TestResults
+TestResults/*
